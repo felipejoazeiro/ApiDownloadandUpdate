@@ -24,7 +24,7 @@ public class FileUploadController {
         FileUploadResponse response = new FileUploadResponse();
         response.setFileName(fileName);
         response.setSize(size);
-        response.setDownloadUri("/downloadFile" + fileCode);
+        response.setDownloadUri("/downloadFile/" + fileCode);
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
